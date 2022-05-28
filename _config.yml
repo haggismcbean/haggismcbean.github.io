@@ -1,11 +1,9 @@
 # Site settings
-title: Blog
-email: hbishop11@gmail.com
+title: Settle Gliese Developer Blog
 description: > # this means to ignore newlines until "baseurl:"
-  Another blog by another junior web developer
+  The developer blog for Settle Gliese
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://blog.settle-gliese.com" # the base hostname & protocol for your site
-github_username:  haggismcbean
 
 # Build settings
 markdown: kramdown
