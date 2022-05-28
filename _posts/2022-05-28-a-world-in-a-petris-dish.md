@@ -29,7 +29,7 @@ Once we did get language figured out, it was still not an easy road to the wonde
 
 **Agriculture was the key** that unlocked the human technology tree, because before we stayed in one place farming year round, we weren't such a sitting target for maraudering rapists, so we didn't need to bother inventing walls, swords, and shields - we could just run away. And we didn't need things like massive clay pots or buildings for storage, because we just ate food as we got it instead.
 
-So how could it possibly take the (allegedly) smartest animal on earth 38,000 years just to figure out how to plant a seed in the ground? How? Tell me, goddamnit!
+So how could it possibly take the (allegedly) smartest animal on earth 38,000 years just to figure out how to plant a seed in the ground and start up a nascent civilisation? How? Tell me, goddamnit!
 
 ## The First King - Nasty, Brutish, and Short
 
