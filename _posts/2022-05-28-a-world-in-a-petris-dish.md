@@ -8,7 +8,7 @@ date:   2022-05-28 16:24:55
 
 Welcome to the Settle Gliese developer blog! I'll be sharing my thoughts about Settle Gliese and let you know how development is going. I thought I'd start with some beard stroking.
 
-<img src="my-beard.jpeg" height="400" />
+<img src="/images/my-beard.jpeg" height="400" />
 
 > The author's beard
 
@@ -19,7 +19,7 @@ This week I'll be writing about how the game Settle Gliese will finally put to r
 
 Modern humans have existed for somewhere between 200,000 and 300,000 years. Strangely, some people think we only actually learned to speak 50,000 years ago, so for that first 150,000 years or so we were just standing around looking at each other, and thinking to ourselves how useful it would be to communicate.
 
-<img src="confused.webp" height="400" />
+<img src="/images/confused.webp" height="400" />
 
 > What it would be like if we couldn't speak
 
@@ -37,7 +37,7 @@ Well, like all unanswerable questions, this one has been answered by philosopher
 
 The first of these great philosophers to answer this particular riddle (or at least the first I'll be mentioning in this blog post) was none other than Thomas Hobbes. Born in 1588 in England, Thomas Hobbes was a teacher, so he had lots of practise making up the answers to things in order to seem clever.
 
-<img src="hobbes.jpeg" height="400" />
+<img src="/images/hobbes.jpeg" height="400" />
 
 > Thomas Hobbes was also nasty brutish and short
 
@@ -51,7 +51,7 @@ That's Hobbes's great explanation for how the first societies formed, and if he'
 
 But was it really all that bad? Or was Thomas Hobbes, the esteemed philosopher, just talking out of his bum hole all along? That's what Jean-Jacques argued. Who? Why, Jean-Jacques Rousseau, of course! 
 
-<img src="rousseau.jpeg" height="400" />
+<img src="/images/rousseau.jpeg" height="400" />
 
 > Rousseau 1712-1778. Significantly less brutish than Hobbes
 
@@ -67,7 +67,7 @@ So who was right? Hobbes? Rousseau? Or is there another explanation? Perhaps agr
 
 In episode 154 of the Simpsons, Lisa places a tooth in a petri dish covered in cola for a school project. A spark of electricity hits the tooth, and by some mysterious querk or magic, life is formed.
 
-<img src="lisa.webp" height="400" />
+<img src="/images/lisa.webp" height="400" />
 
 > The spark of life
 
