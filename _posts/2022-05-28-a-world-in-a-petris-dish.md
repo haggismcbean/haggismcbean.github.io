@@ -41,7 +41,7 @@ The first of these great philosophers to answer this particular riddle (or at le
 
 > Thomas Hobbes was also nasty brutish and short
 
-In 1651 he published his book 'Leviathan', in which he argues that for that period of time before men formed themselves into civilisations, they spent all their team killing each other, stealing sex, and eating mud. It was a brutal time according to Hobbes, who famously described it as 'solitary, poor, nasty, brutish, and short'.
+In 1651 he published his book 'Leviathan', in which he argues that for that period of time before men formed themselves into civilisations, they spent all time team killing each other, stealing sex, and eating mud. It was a brutal time according to Hobbes, who famously described it as 'solitary, poor, nasty, brutish, and short'.
 
 But then one day, somewhere out in the killing fields, came a great figure, chosen by God to forge order out of the chaos. He marched around with a big stick and forced everyone to stop killing each other and jolly well behave themselves. He made some of them farm, others mine for minerals, and others made useful tools in exchange for food and minerals. And things just sort of snowballed from there. And that man's name? Well, actually we don't know his name, because he made everyone else call him 'Your Majesty' - he was the first king.
 
