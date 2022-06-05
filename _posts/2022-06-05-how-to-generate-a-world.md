@@ -20,7 +20,7 @@ For most of the week I've been working on the prologue, which has involved build
 <img src="/images/warmup-septembitchall.png" height="300" />
 > Some pink items
 
-<img src="/images/warmup-froggypractice.png" height="100" />
+<img src="/images/warmup-froggypractice.png" height="192" />
 > Various frogs of different types
 
 Auilix, the pixel artist (follow them [here](https://twitter.com/auilix)), started off the week getting into pixel art. Drawing on a small top-down scale with a limited palette is more puzzle working and problem solving than illustration usually is, so warm ups are necessary. Saultoon's excellent [channel](https://www.youtube.com/c/saultoons) and [Septembit challenge](https://twitter.com/septembit) were a perfect jumping-off point and check out these 16 x 16 frogs as a bonus.
@@ -37,7 +37,7 @@ As a consequence there will be more tiles on a panel, which I don't think is a b
 
 And for all you dead by daylight fans, here is some dead by daylight fan art in the new style:
 
-<img src="/images/lildbd.png" height="80" />
+<img src="/images/lildbd.png" height="72" />
 > Coming soon to a screen near you - Dead By Daylight the Roguelike
 
 ## Game Design
