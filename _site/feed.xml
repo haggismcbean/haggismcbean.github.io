@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Settle Gliese Developer Blog</title>
+    <description>The developer blog for Settle Gliese
+</description>
+    <link>http://blog.settle-gliese.com/</link>
+    <atom:link href="http://blog.settle-gliese.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 05 Jun 2022 15:15:39 +0200</pubDate>
+    <lastBuildDate>Sun, 05 Jun 2022 15:15:39 +0200</lastBuildDate>
+    <generator>Jekyll v4.2.2</generator>
+    
+      <item>
+        <title>How to Generate a World</title>
+        <description>&lt;h2 id=&quot;this-weeks-update&quot;&gt;This Week’s Update&lt;/h2&gt;
+
+&lt;p&gt;Hello friends. This week has been a pretty exciting time for the project.&lt;/p&gt;
+
+&lt;p&gt;First but by no means least, after some months of paperwork ping pong I have received the contract for the funding application, so fingers crossed I might actually receive the first installment some time soon.&lt;/p&gt;
+
+&lt;p&gt;For most of the week I’ve been working on the prologue, which has involved building a terminal emulator, and building a sort of ‘staged scene’ in the game world. There’s still plenty of work to do here but it’s been fun getting my hands dirty. I’ll try not to show too many spoilers, but here’s one little screen shot which doesn’t give too much away.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/terminal.png&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Now you too, can be a hacker&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;pixel-art&quot;&gt;Pixel Art&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/warmup-septembitchall.png&quot; height=&quot;300&quot; /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Some pink items&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/warmup-froggypractice.png&quot; height=&quot;100&quot; /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Various frogs of different types&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The pixel artist has taken a look at the ideas I had for the new biomes and after having some fun drawing froggies, has started work on the designs. One interesting thing that came out of this process is we’ve decided to go with rectangular tiles instead of square ones. A vertical rectangle shape is more ‘human’ shaped than a square, and I think it makes the sprites seem more mature and less potato shaped.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/pixelexperiments1a.png&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Potato people and square objects&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/pixelexperiments2a.png&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Long graceful, people-shaped people&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;As a consequence there will be more tiles on a panel, which I don’t think is a bad thing. Let me know what you think!&lt;/p&gt;
+
+&lt;p&gt;And for all you dead by daylight fans, here is some dead by daylight fan art in the new style:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/lildbd.png&quot; height=&quot;80&quot; /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Coming soon to a screen near you - Dead By Daylight the Roguelike&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;game-design&quot;&gt;Game Design&lt;/h2&gt;
+
+&lt;p&gt;I’ve also been working a lot on the game design and have made some pretty big decisions that I think will improve how the game plays. There’s still a lot that will go into this and everything’s a work in progress. If you have any thoughts or suggestions about these feel free to share in the &lt;a href=&quot;https://discord.gg/h9sCtUfhhW&quot;&gt;discord&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;mountains-into-mazes&quot;&gt;Mountains into Mazes&lt;/h2&gt;
+
+&lt;p&gt;Mountains represented a serious barrier for early humans, and impeded migration to such an extent that in some places different cultures, languages, and even races would develop on either side of the mountain range. Pretty cool, right? I want this to arise in the game, but how to achieve this in an interesting way? We could always force characters to move very slowly through mountain regions, or add a chance of them dying, but I wanted characters to feel that desperation of being lost and stuck halfway up a mountain and these options didn’t quite give that feeling. But I had another idea - we could turn the mountains into huge multi-panel mazes.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/maze-mountain.png&quot; height=&quot;400&quot; /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;What a maze looks like&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In this way players can cross if they’re really desperate, brave, or foolish, but I hope most players will be sufficiently put off. Hopefully this is a nice way of translating a real world problem into a ‘game-like’ problem.&lt;/p&gt;
+
+&lt;h2 id=&quot;mines-into-dungeons&quot;&gt;Mines into Dungeons&lt;/h2&gt;
+
+&lt;p&gt;Mines were also very dangerous places back in the day, so much so that the best way to get rich from mining was to persuade someone else to do it for you. In the alpha of the game mining was simply a case of walking up to a deposit of some stone or ore, and clicking the ‘gather’ button.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/alpha-mine.png&quot; height=&quot;150&quot; /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;An familiar scene&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I wanted it to be more dangerous, to force players to make the same kind of risk reward calculations that early humans must have considered when entering a mine. My first idea was to make players ‘dig’ a mine, and on each dig there was a percentage chance of the mine collapsing and the player dying. Then I realised what countless other game designers must have realised before me, we can represent the danger of a mine in a much more entertaining way by turning them into dungeons.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/mock-mine.png&quot; height=&quot;400&quot; /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;A very bare bones mock up of a mine-dungeon&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;A player can enter a mine and battle their way through monsters if they want to find the riches buried therein. Or if they value their life, they can persuade other players to explore the mines for them. I hope this will be a nice system for giving newspawns a fun task, as town leaders can persuade them to go spelunking on their behalf.&lt;/p&gt;
+
+&lt;h2 id=&quot;multiple-metals&quot;&gt;Multiple Metals&lt;/h2&gt;
+
+&lt;p&gt;A final problem I had with the alpha was that once you had discovered bronze and made all bronze items, there wasn’t much further tech tree to go, but before you discovered bronze there also wasn’t much to do. My first thought was to simply make discovering bronze harder and expand the early game tech tree.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/scrap-metal.jpeg&quot; height=&quot;300&quot; /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;A bunch of useless metal&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;But I think a better solution is to have multiple new metals made up of two or more ores, with varying rarity. The rarer metals will of course produce to stronger weapons, armour, and tools. This I think should be a lot easier to balance than the ‘just bronze’ route, and with the best of metals only available if you mine ores coming from opposite sides of the planet, it will strongly incentivise long trade routes.&lt;/p&gt;
+
+&lt;h2 id=&quot;apothecaries-and-brainchip-upgrades&quot;&gt;Apothecaries and Brainchip Upgrades&lt;/h2&gt;
+
+&lt;p&gt;As well as metals, we can apply a similar principle to the creation of tonics and the upgrading of brainchips. Local plants or rare minerals can provide small upgrades, but for the most powerful effects you’ll need to swap plants that only occur on the other side of the planet. With plants, players will need ‘local knowledge’ - you can only harvest the valuable parts of the plant if you were born in that region. In this way long distance trade or tyranical empires will be the only methods of obtaining the most powerful in game items.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-to-generate-a-planet&quot;&gt;How to Generate a Planet&lt;/h2&gt;
+
+&lt;p&gt;Some of you may be interested in how the planet Gliese was generated, so I will add a quick lowdown of how I did it here. In summary - someone else did it for me. I used the brilliant open source project &lt;a href=&quot;https://github.com/Mindwerks/worldengine&quot;&gt;Mindwerks WorldEngine&lt;/a&gt;, which generates a full little world.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/ancient_map_seed1.png&quot; height=&quot;400&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The worlds are generated using plate techtonics, erosion, rain shadows, holdridge life zone models (whatever they are) and more.  I generated a number of little worlds until I found one I liked the look of. You choose the size of the world, and it generates elevation, precipitation, temperature, biome, and ocean maps as images. I then wrote a small program which reads each of these images and saves the data into a database. Not sure what I mean by that? Take for example this heat map&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/heat-map.png&quot; height=&quot;400&quot; /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;The average temperatures of a generated planet&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;There are seven colours on this map which represent seven temperatures. My program would look at each pixel, convert its colour into the temperature range (from 1-7), and save this data under the pixel’s position. Once I’d done this for every pixel, I had the full world in a database. Each of those pixels is one panel in Settle Gliese. Generating the terrain for the panels, including cliffs, rivers, and coastlines, was a little more complicated. Maybe I’ll write some more about that another time.&lt;/p&gt;
+
+&lt;p&gt;Thanks for reading, I’ll see you again next week!&lt;/p&gt;
+</description>
+        <pubDate>Sun, 05 Jun 2022 14:56:46 +0200</pubDate>
+        <link>http://blog.settle-gliese.com/2022/06/05/how-to-generate-a-world.html</link>
+        <guid isPermaLink="true">http://blog.settle-gliese.com/2022/06/05/how-to-generate-a-world.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>A World in a Petri Dish</title>
+        <description>&lt;h2 id=&quot;hello-world&quot;&gt;Hello World&lt;/h2&gt;
+
+&lt;p&gt;Welcome to the Settle Gliese developer blog! I’ll be sharing my thoughts about Settle Gliese and let you know how development is going. I thought I’d start with some beard stroking.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/my-beard.jpeg&quot; height=&quot;400&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The author’s beard&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This week I’ll be writing about how the game Settle Gliese will finally put to rest an age old philosophical question - how did we go from a hunter gatherer lifestyle to the more technologically advanced ones you see today?&lt;/p&gt;
+
+&lt;h2 id=&quot;the-mute-ages&quot;&gt;The Mute Ages&lt;/h2&gt;
+
+&lt;p&gt;Modern humans have existed for somewhere between 200,000 and 300,000 years. Strangely, some people think we only actually learned to speak 50,000 years ago, so for that first 150,000 years or so we were just standing around looking at each other, and thinking to ourselves how useful it would be to communicate.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/confused.webp&quot; height=&quot;400&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;What it would be like if we couldn’t speak&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;technology-victory&quot;&gt;Technology Victory&lt;/h2&gt;
+
+&lt;p&gt;Once we did get language figured out, it was still not an easy road to the wonders of the modern age. Shockingly, things did not really get started until we learned the basics of agriculture just 12,000 years ago.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Agriculture was the key&lt;/strong&gt; that unlocked the human technology tree, because before we stayed in one place farming year round, we weren’t such a sitting target for maraudering rapists, so we didn’t need to bother inventing walls, swords, and shields - we could just run away. And we didn’t need things like massive clay pots or buildings for storage, because we just ate food as we got it instead.&lt;/p&gt;
+
+&lt;p&gt;So how could it possibly take the (allegedly) smartest animal on earth 38,000 years just to figure out how to plant a seed in the ground and start up a nascent civilisation? How? Tell me, goddamnit!&lt;/p&gt;
+
+&lt;h2 id=&quot;the-first-king---nasty-brutish-and-short&quot;&gt;The First King - Nasty, Brutish, and Short&lt;/h2&gt;
+
+&lt;p&gt;Well, like all unanswerable questions, this one has been answered by philosophers - a clever group of people that worked out they could just make stuff up and if nobody could prove them wrong, they could fool a university into hiring them.&lt;/p&gt;
+
+&lt;p&gt;The first of these great philosophers to answer this particular riddle (or at least the first I’ll be mentioning in this blog post) was none other than Thomas Hobbes. Born in 1588 in England, Thomas Hobbes was a teacher, so he had lots of practise making up the answers to things in order to seem clever.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/hobbes.jpeg&quot; height=&quot;400&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Thomas Hobbes was also nasty brutish and short&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In 1651 he published his book ‘Leviathan’, in which he argues that for that period of time before men formed themselves into civilisations, they spent all time team killing each other, stealing sex, and eating mud. It was a brutal time according to Hobbes, who famously described it as ‘solitary, poor, nasty, brutish, and short’.&lt;/p&gt;
+
+&lt;p&gt;But then one day, somewhere out in the killing fields, came a great figure, chosen by God to forge order out of the chaos. He marched around with a big stick and forced everyone to stop killing each other and jolly well behave themselves. He made some of them farm, others mine for minerals, and others made useful tools in exchange for food and minerals. And things just sort of snowballed from there. And that man’s name? Well, actually we don’t know his name, because he made everyone else call him ‘Your Majesty’ - he was the first king.&lt;/p&gt;
+
+&lt;p&gt;That’s Hobbes’s great explanation for how the first societies formed, and if he’s right, then we have a lot to thank that first king for. Sure, the simple days of sexing, killing, and eating weren’t all bad, but they were a darn sight worse than what we have now. And if we were dropped on an alien planet with no knoweldge of our previous lives on earth, according to Hobbes, we would return to that primitive state.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-garden-of-eden&quot;&gt;The Garden of Eden&lt;/h2&gt;
+
+&lt;p&gt;But was it really all that bad? Or was Thomas Hobbes, the esteemed philosopher, just talking out of his bum hole all along? That’s what Jean-Jacques argued. Who? Why, Jean-Jacques Rousseau, of course!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/rousseau.jpeg&quot; height=&quot;400&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Rousseau 1712-1778. Significantly less brutish than Hobbes&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Like all good Frenchmen, Rousseau &lt;em&gt;hated&lt;/em&gt; kings. So when he read about Thomas Hobbes’s story of the origin of civilisation, he just couldn’t be having that. Rousseau argued instead that life before civilisation was way &lt;em&gt;better&lt;/em&gt; than what came after it - after all, why else would we spend so long doing nothing but not-inventing-civilisation? The time before civilisation was a utopia. Men and women loved one another freely, young children skipped around gailey through fields of untended grass, we ate ripe fruit from trees, and all in all there was very little killing. Perhaps some of the only people to be killed at this time were the ones who had the gall to attempt to force us into civilisation. Rousseau wrote -&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The first man who, having fenced in a piece of land, said ‘This is mine’, and found people naïve enough to believe him, that man was the true founder of civil society. From how many crimes, wars, and murders, from how many horrors and misfortunes might not any one have saved mankind, by pulling up the stakes, or filling up the ditch, and crying to his fellows: Beware of listening to this impostor; you are undone if you once forget that the fruits of the earth belong to us all, and the earth itself to nobody.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;necessity-is-the-mother-of-all-invention&quot;&gt;Necessity is the Mother of All Invention&lt;/h2&gt;
+
+&lt;p&gt;So who was right? Hobbes? Rousseau? Or is there another explanation? Perhaps agriculture was invented out of necessity, because there were simply too many of us to be able to sustain ourselves from hunting and gathering alone? One theory is that we liked to gather in huge numbers by large rocks stacked on end. We did this for religious reasons, and also to party, and these sites became so popular it was necessary to invent farming and other grown-up things like taxes to allow people to live there year round looking after the things. Well, that could be the case, but it seems like there are still a lot of smart people arguing about which theory is right to this day, and as more archaeological evidence comes out, the popular explanation keeps changing.&lt;/p&gt;
+
+&lt;h2 id=&quot;a-world-in-a-petri-dish&quot;&gt;A World in a Petri Dish&lt;/h2&gt;
+
+&lt;p&gt;In episode 154 of the Simpsons, Lisa places a tooth in a petri dish covered in cola for a school project. A spark of electricity hits the tooth, and by some mysterious querk or magic, life is formed.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/lisa.webp&quot; height=&quot;400&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The spark of life&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Lisa watches through a microscope as mould forms, then is astonished as the mould turns into little tiny humans, first they are hunters, next they form agricultural communities, and before long they have a little world as rich and as complex as earth. If only Lisa watched a little closer, we’d have the answer to our question, of how and why civilisation was formed.&lt;/p&gt;
+
+&lt;h2 id=&quot;finally-an-answer---and-its-a-game&quot;&gt;Finally, an answer - and it’s a game!&lt;/h2&gt;
+
+&lt;p&gt;Well, my friends, that brings us to Settle Gliese. Settle Gliese is a game about what would happen if you dropped a bunch of strangers in the middle of an untamed world, and watched how they get along. We’ll be able to see in real time, which ones are killing each other and eating mud, which ones are getting along famously, and which ones are running out of food and forced to settle down and start tending plants. It’s my hope that in time civilisation will spawn, and art, culture, trade, and emergent complexity is formed from the wilderness of the planet Gliese. The great debate will be settled once and for all. Or, well, in actual fact you probably shouldn’t really use this game to settle any debates. But at least it’ll be interesting to watch, and each of us can take part in a grand experiment to see how society was formed.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 28 May 2022 18:24:55 +0200</pubDate>
+        <link>http://blog.settle-gliese.com/2022/05/28/a-world-in-a-petris-dish.html</link>
+        <guid isPermaLink="true">http://blog.settle-gliese.com/2022/05/28/a-world-in-a-petris-dish.html</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>How to Generate a World</title>
+  <meta name="description" content="This Week’s Update">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://blog.settle-gliese.com/2022/06/05/how-to-generate-a-world.html">
+  <link rel="alternate" type="application/rss+xml" title="Settle Gliese Developer Blog" href="http://blog.settle-gliese.com/feed.xml" />
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Settle Gliese Developer Blog</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+        
+          
+        
+          
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">How to Generate a World</h1>
+    <p class="post-meta">Jun 5, 2022</p>
+  </header>
+
+  <article class="post-content">
+    <h2 id="this-weeks-update">This Week’s Update</h2>
+
+<p>Hello friends. This week has been a pretty exciting time for the project.</p>
+
+<p>First but by no means least, after some months of paperwork ping pong I have received the contract for the funding application, so fingers crossed I might actually receive the first installment some time soon.</p>
+
+<p>For most of the week I’ve been working on the prologue, which has involved building a terminal emulator, and building a sort of ‘staged scene’ in the game world. There’s still plenty of work to do here but it’s been fun getting my hands dirty. I’ll try not to show too many spoilers, but here’s one little screen shot which doesn’t give too much away.</p>
+
+<p><img src="/images/terminal.png" width="100%" /></p>
+<blockquote>
+  <p>Now you too, can be a hacker</p>
+</blockquote>
+
+<h2 id="pixel-art">Pixel Art</h2>
+
+<p><img src="/images/warmup-septembitchall.png" height="300" /></p>
+<blockquote>
+  <p>Some pink items</p>
+</blockquote>
+
+<p><img src="/images/warmup-froggypractice.png" height="100" /></p>
+<blockquote>
+  <p>Various frogs of different types</p>
+</blockquote>
+
+<p>The pixel artist has taken a look at the ideas I had for the new biomes and after having some fun drawing froggies, has started work on the designs. One interesting thing that came out of this process is we’ve decided to go with rectangular tiles instead of square ones. A vertical rectangle shape is more ‘human’ shaped than a square, and I think it makes the sprites seem more mature and less potato shaped.</p>
+
+<p><img src="/images/pixelexperiments1a.png" width="100%" /></p>
+<blockquote>
+  <p>Potato people and square objects</p>
+</blockquote>
+
+<p><img src="/images/pixelexperiments2a.png" width="100%" /></p>
+<blockquote>
+  <p>Long graceful, people-shaped people</p>
+</blockquote>
+
+<p>As a consequence there will be more tiles on a panel, which I don’t think is a bad thing. Let me know what you think!</p>
+
+<p>And for all you dead by daylight fans, here is some dead by daylight fan art in the new style:</p>
+
+<p><img src="/images/lildbd.png" height="80" /></p>
+<blockquote>
+  <p>Coming soon to a screen near you - Dead By Daylight the Roguelike</p>
+</blockquote>
+
+<h2 id="game-design">Game Design</h2>
+
+<p>I’ve also been working a lot on the game design and have made some pretty big decisions that I think will improve how the game plays. There’s still a lot that will go into this and everything’s a work in progress. If you have any thoughts or suggestions about these feel free to share in the <a href="https://discord.gg/h9sCtUfhhW">discord</a></p>
+
+<h2 id="mountains-into-mazes">Mountains into Mazes</h2>
+
+<p>Mountains represented a serious barrier for early humans, and impeded migration to such an extent that in some places different cultures, languages, and even races would develop on either side of the mountain range. Pretty cool, right? I want this to arise in the game, but how to achieve this in an interesting way? We could always force characters to move very slowly through mountain regions, or add a chance of them dying, but I wanted characters to feel that desperation of being lost and stuck halfway up a mountain and these options didn’t quite give that feeling. But I had another idea - we could turn the mountains into huge multi-panel mazes.</p>
+
+<p><img src="/images/maze-mountain.png" height="400" /></p>
+<blockquote>
+  <p>What a maze looks like</p>
+</blockquote>
+
+<p>In this way players can cross if they’re really desperate, brave, or foolish, but I hope most players will be sufficiently put off. Hopefully this is a nice way of translating a real world problem into a ‘game-like’ problem.</p>
+
+<h2 id="mines-into-dungeons">Mines into Dungeons</h2>
+
+<p>Mines were also very dangerous places back in the day, so much so that the best way to get rich from mining was to persuade someone else to do it for you. In the alpha of the game mining was simply a case of walking up to a deposit of some stone or ore, and clicking the ‘gather’ button.</p>
+
+<p><img src="/images/alpha-mine.png" height="150" /></p>
+<blockquote>
+  <p>An familiar scene</p>
+</blockquote>
+
+<p>I wanted it to be more dangerous, to force players to make the same kind of risk reward calculations that early humans must have considered when entering a mine. My first idea was to make players ‘dig’ a mine, and on each dig there was a percentage chance of the mine collapsing and the player dying. Then I realised what countless other game designers must have realised before me, we can represent the danger of a mine in a much more entertaining way by turning them into dungeons.</p>
+
+<p><img src="/images/mock-mine.png" height="400" /></p>
+<blockquote>
+  <p>A very bare bones mock up of a mine-dungeon</p>
+</blockquote>
+
+<p>A player can enter a mine and battle their way through monsters if they want to find the riches buried therein. Or if they value their life, they can persuade other players to explore the mines for them. I hope this will be a nice system for giving newspawns a fun task, as town leaders can persuade them to go spelunking on their behalf.</p>
+
+<h2 id="multiple-metals">Multiple Metals</h2>
+
+<p>A final problem I had with the alpha was that once you had discovered bronze and made all bronze items, there wasn’t much further tech tree to go, but before you discovered bronze there also wasn’t much to do. My first thought was to simply make discovering bronze harder and expand the early game tech tree.</p>
+
+<p><img src="/images/scrap-metal.jpeg" height="300" /></p>
+<blockquote>
+  <p>A bunch of useless metal</p>
+</blockquote>
+
+<p>But I think a better solution is to have multiple new metals made up of two or more ores, with varying rarity. The rarer metals will of course produce to stronger weapons, armour, and tools. This I think should be a lot easier to balance than the ‘just bronze’ route, and with the best of metals only available if you mine ores coming from opposite sides of the planet, it will strongly incentivise long trade routes.</p>
+
+<h2 id="apothecaries-and-brainchip-upgrades">Apothecaries and Brainchip Upgrades</h2>
+
+<p>As well as metals, we can apply a similar principle to the creation of tonics and the upgrading of brainchips. Local plants or rare minerals can provide small upgrades, but for the most powerful effects you’ll need to swap plants that only occur on the other side of the planet. With plants, players will need ‘local knowledge’ - you can only harvest the valuable parts of the plant if you were born in that region. In this way long distance trade or tyranical empires will be the only methods of obtaining the most powerful in game items.</p>
+
+<h2 id="how-to-generate-a-planet">How to Generate a Planet</h2>
+
+<p>Some of you may be interested in how the planet Gliese was generated, so I will add a quick lowdown of how I did it here. In summary - someone else did it for me. I used the brilliant open source project <a href="https://github.com/Mindwerks/worldengine">Mindwerks WorldEngine</a>, which generates a full little world.</p>
+
+<p><img src="/images/ancient_map_seed1.png" height="400" /></p>
+
+<p>The worlds are generated using plate techtonics, erosion, rain shadows, holdridge life zone models (whatever they are) and more.  I generated a number of little worlds until I found one I liked the look of. You choose the size of the world, and it generates elevation, precipitation, temperature, biome, and ocean maps as images. I then wrote a small program which reads each of these images and saves the data into a database. Not sure what I mean by that? Take for example this heat map</p>
+
+<p><img src="/images/heat-map.png" height="400" /></p>
+<blockquote>
+  <p>The average temperatures of a generated planet</p>
+</blockquote>
+
+<p>There are seven colours on this map which represent seven temperatures. My program would look at each pixel, convert its colour into the temperature range (from 1-7), and save this data under the pixel’s position. Once I’d done this for every pixel, I had the full world in a database. Each of those pixels is one panel in Settle Gliese. Generating the terrain for the panels, including cliffs, rivers, and coastlines, was a little more complicated. Maybe I’ll write some more about that another time.</p>
+
+<p>Thanks for reading, I’ll see you again next week!</p>
+
+  </article>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Settle Gliese Developer Blog</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <li>Settle Gliese Developer Blog</li>
+          <li><a href="mailto:"></a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-3">
+        <p class="text">The developer blog for Settle Gliese
+</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>
