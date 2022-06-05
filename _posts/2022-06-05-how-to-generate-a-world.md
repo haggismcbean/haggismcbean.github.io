@@ -23,7 +23,9 @@ For most of the week I've been working on the prologue, which has involved build
 <img src="/images/warmup-froggypractice.png" height="100" />
 > Various frogs of different types
 
-The pixel artist has taken a look at the ideas I had for the new biomes and after having some fun drawing froggies, has started work on the designs. One interesting thing that came out of this process is we've decided to go with rectangular tiles instead of square ones. A vertical rectangle shape is more 'human' shaped than a square, and I think it makes the sprites seem more mature and less potato shaped.
+Auilix, the pixel artist (follow them [here](https://twitter.com/auilix)), started off the week getting into pixel art. Drawing on a small top-down scale with a limited palette is more puzzle working and problem solving than illustration usually is, so warm ups are necessary. Saultoon's excellent [channel](https://www.youtube.com/c/saultoons) and [Septembit challenge](https://twitter.com/septembit) were a perfect jumping-off point and check out these 16 x 16 frogs as a bonus.
+
+After some design exploration and palette building, we decided to go with a rectangular 16 x 24 pixel tile over the 16 x 16 tiles we used in the alpha for Settle Gliese. A vertical rectangle shape is more ‘human’ shaped than a square, and I think it makes the sprites seem more mature and less potato shaped.
 
 <img src="/images/pixelexperiments1a.png" width="100%" />
 > Potato people and square objects
