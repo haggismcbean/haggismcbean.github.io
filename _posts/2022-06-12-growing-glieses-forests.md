@@ -66,13 +66,13 @@ Perhaps not the most thrilling for the readers of this blog, but an important pa
 
 [<img src="/images/advert.gif"/>](/images/advert.gif)
 
-> Click on the image to see it full size with video controls
+> Click on the image to see it full size
 
 And then you will be interrupted with an advert. If you press escape, you can return to the safety of your apartment. But for those brave (or bored) enough to press any key, will be taken to the 'registration form'. 
 
 [<img src="/images/registration.gif"/>](/images/registration.gif)
 
-> A fully filled out registration form. Click on the image again to see it full size with video controls
+> A fully filled out registration form. Click on the image again to see it full size
 
 This page is intended to get players thinking about the personality of their character. Players new to text based roleplaying games tend to invent flawless individuals which can be uninteresting to interact with, so I have included some questions like 'what are your weaknesses' to guide these players towards making more nuanced characters. I had great fun randomly generating answers. Once this page is filled out, you are taken to a spaceship en route to the planet, where you will be shown a bit more about the world, and choose who to embark with.
 
