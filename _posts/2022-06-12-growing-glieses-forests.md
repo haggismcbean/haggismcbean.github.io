@@ -64,7 +64,7 @@ Perhaps not the most thrilling for the readers of this blog, but an important pa
 
 > For a while, you will entertain yourself by playing pong, or perhaps some other moderately entertaining task
 
-[<img src="/images/advert.gif"/>](/images/advert.gif)
+[<img src="/images/informatic.gif"/>](/images/informatic.gif)
 
 > Click on the image to see it full size
 
