@@ -44,7 +44,7 @@ I am toying with the idea of making the various screens in the game draggable, r
 
 ## Conversation Trees
 
-When you first arrive on the space station orbiting the planet Gliese, you have a conversation with the captain, who fills you in on what you'll be getting up to when you arrive on the planet. We need more versatile ways for characters to communicate asyncronously, and allowing players to create their own dialogue trees would be one way to accomplish this, so this dialogue tree might screen be used for more than just the tutorial. In the future I will remove the purple and orange boxes from the dialogue and go with a more dignified white-on-black design. Adding some logic to convert \*asterisks\* to *italic* would be a nice improvement as well.
+When you first arrive on the space station orbiting the planet Gliese, you have a conversation with the captain, who fills you in on what you'll be getting up to when you arrive on the planet. We need more versatile ways for characters to communicate asyncronously, and allowing players to create their own dialogue trees would be one way to accomplish this, so this screen may be used for more than just the tutorial. In the future I will remove the purple and orange boxes from the dialogue and go with a more dignified white-on-black design. Adding some logic to convert \*asterisks\* to *italic* would be a nice improvement as well.
 
 <img src="/images/dialogue-tree.gif" />
 
