@@ -6,8 +6,8 @@
 </description>
     <link>http://blog.settle-gliese.com/</link>
     <atom:link href="http://blog.settle-gliese.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 17 Jun 2022 12:30:10 +0200</pubDate>
-    <lastBuildDate>Fri, 17 Jun 2022 12:30:10 +0200</lastBuildDate>
+    <pubDate>Fri, 17 Jun 2022 12:32:04 +0200</pubDate>
+    <lastBuildDate>Fri, 17 Jun 2022 12:32:04 +0200</lastBuildDate>
     <generator>Jekyll v4.2.2</generator>
     
       <item>
@@ -62,7 +62,7 @@
 
 &lt;h2 id=&quot;conversation-trees&quot;&gt;Conversation Trees&lt;/h2&gt;
 
-&lt;p&gt;When you first arrive on the space station orbiting the planet Gliese, you have a conversation with the captain, who fills you in on what you’ll be getting up to when you arrive on the planet gliese. We need more versatile ways for characters to communicate asyncronously, and allowing players to create their own dialogue trees would be one way to accomplish this, so this dialogue tree might screen be used for more than just the tutorial. In the future I will remove the purple and orange boxes from the dialogue and go with a more dignified white-on-black design. Adding some logic to convert *asterisks* to &lt;em&gt;italic&lt;/em&gt; would be a nice improvement as well.&lt;/p&gt;
+&lt;p&gt;When you first arrive on the space station orbiting the planet Gliese, you have a conversation with the captain, who fills you in on what you’ll be getting up to when you arrive on the planet. We need more versatile ways for characters to communicate asyncronously, and allowing players to create their own dialogue trees would be one way to accomplish this, so this dialogue tree might screen be used for more than just the tutorial. In the future I will remove the purple and orange boxes from the dialogue and go with a more dignified white-on-black design. Adding some logic to convert *asterisks* to &lt;em&gt;italic&lt;/em&gt; would be a nice improvement as well.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/dialogue-tree.gif&quot; /&gt;&lt;/p&gt;
 
