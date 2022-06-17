@@ -4,7 +4,7 @@ title:  "Journeying to Gliese"
 date:   2022-06-16 10:20:37
 ---
 
-## Journeying to Gliese
+## Let's Journey Together
 
 Hello again friends. This week work continued on the tutorial - I hope to have most of the functionality finished by the end of next week, so I can finally start generating the beautiful new biomes of the planet Gliese.
 

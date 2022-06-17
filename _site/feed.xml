@@ -6,13 +6,13 @@
 </description>
     <link>http://blog.settle-gliese.com/</link>
     <atom:link href="http://blog.settle-gliese.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 17 Jun 2022 12:01:08 +0200</pubDate>
-    <lastBuildDate>Fri, 17 Jun 2022 12:01:08 +0200</lastBuildDate>
+    <pubDate>Fri, 17 Jun 2022 12:04:49 +0200</pubDate>
+    <lastBuildDate>Fri, 17 Jun 2022 12:04:49 +0200</lastBuildDate>
     <generator>Jekyll v4.2.2</generator>
     
       <item>
         <title>Journeying to Gliese</title>
-        <description>&lt;h2 id=&quot;journeying-to-gliese&quot;&gt;Journeying to Gliese&lt;/h2&gt;
+        <description>&lt;h2 id=&quot;lets-journey-together&quot;&gt;Let’s Journey Together&lt;/h2&gt;
 
 &lt;p&gt;Hello again friends. This week work continued on the tutorial - I hope to have most of the functionality finished by the end of next week, so I can finally start generating the beautiful new biomes of the planet Gliese.&lt;/p&gt;
 
