@@ -12,7 +12,7 @@ We're trying to introduce the player into this world and get them asking these q
 
 ### The Dingy Apartment
 
-<img src="../images/bedroom.gif" />
+<img src="/images/bedroom.gif" />
 
 > You don't want to know where the toilet is...
 
@@ -20,19 +20,19 @@ The apartment is very small and you can't see anything outside it. The door look
 
 ### The Space Station
 
-<img src="../images/spaceship.gif" />
+<img src="/images/spaceship.gif" />
 
 > Who would've thought an office floating in space could be so boring?
 
 The space station has long bare corridors and spartan offices. It is a bit tired looking, with little notes stuck up in front of some of the office doors. You can see some barrels and pipes attached to the outer hull in silhouette - clearly it was built without beauty in mind. Like in any corporation, there seems to be a hierarchy here. Some of the people you talk to go to lengths to show you they are more important than you, whereas others seem to be more friendly and less formal.
 
-<img src="../images/choose-embark.gif" />
+<img src="/images/choose-embark.gif" />
 
 > Whatever architect designed this place needs a paycut
 
 ### The Shuttle
 
-<img src="../images/spacepod.gif" />
+<img src="/images/spacepod.gif" />
 
 > Hey, you look like someone I know...
 
@@ -45,7 +45,7 @@ So, that about  sums up what I've been working on this week - now let's hear fro
 Hello from your local pixel artist! I have been busy these weeks working on some of the rarer and more far-flung flora and fauna on Gliese. The places that won't make up the majority of arable land but will hopefully be special places to travel through and explore. I kind of don't want to spoil these locations (and you'd want to chart biomes like "The Slimes", "Crunchy Forest" and "Gumbo Rumblings" yourself right?) so today instead I'll share some rejected pixel art.
 
 
-<img src="../images/experimentbloggy.png" width="340"/>
+<img src="/images/experimentbloggy.png" width="340"/>
 
 > Okay, who keeps putting holes in my dang fences?
 
