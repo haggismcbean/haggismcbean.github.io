@@ -6,9 +6,220 @@
 </description>
     <link>http://blog.settle-gliese.com/</link>
     <atom:link href="http://blog.settle-gliese.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 24 Jun 2022 18:29:36 +0200</pubDate>
-    <lastBuildDate>Fri, 24 Jun 2022 18:29:36 +0200</lastBuildDate>
+    <pubDate>Sun, 03 Jul 2022 15:43:30 +0200</pubDate>
+    <lastBuildDate>Sun, 03 Jul 2022 15:43:30 +0200</lastBuildDate>
     <generator>Jekyll v4.2.2</generator>
+    
+      <item>
+        <title>Procedural Generation of Biomes</title>
+        <description>&lt;p&gt;Hello friends. This week was quite eventful. The most exciting (and by that I mean terrifying) moment was definitely when someone tried to smash down the front door to my apartment whilst I was sat at my desk working. They managed to get the door partially open but luckily we had the chain on and they didn’t get through that.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/jonny.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I argued through the door with them for a while whilst my girlfriend called the cops. After a while of asking them to kindly fuck off they asked to just come in and collect their clothes. I told them we’d in fact been the sole occupants of this flat for five years. It took a lot of convincing for them to understand they had got the wrong apartment but eventually I pointed out the unique graffitti next to the door and without so much as an apology they conceded I was correct and went upstairs to smash another door in.&lt;/p&gt;
+
+&lt;p&gt;Eventually the cops came, the crazy person was sat on a bench in the street nearby. We gave statements, a locksmith came to repair the door… It turns out it was just some very confused person thinking they were breaking into their own apartment because they forgot their keys…? Well, I guess this kind of stuff occasionally happening is the price you pay for living in a busy street in Berlin. Will they come back and try to break in again? Tune in next week to find out. Anyway, forgive me the brief interlude into my real life - the real excitement this week came from the game.&lt;/p&gt;
+
+&lt;h2 id=&quot;daynight-cycle&quot;&gt;Day/Night cycle&lt;/h2&gt;
+
+&lt;p&gt;First, I animated the day/night cycle. Currently one day = 1 hour. There’s 20 minutes of night, 10 minutes of sunrise, 20 minutes of day, 10 minutes of sunset. Night time will be dangerous so make sure you’ve got walls and fires set up before your first nightfall.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/sunrise.gif&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The sun rising on the planet Gliese (sped up)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;animals&quot;&gt;Animals&lt;/h2&gt;
+
+&lt;p&gt;I wanted to spend a few days on something that has been worrying me - animals. In the alpha, animals are not visible to the player and you can only interact with them by clicking a ‘hunt’ button. For the next iteration of the game, I want fully visible animals with ‘intelligent’ behaviour - some of them will flee from you, others will hunt you, and if you’re lucky some will fling dung at you from the treetops. I was a bit worried about coding this, so I decided to have a quick look at the problem before starting on the biomes to see what was achievable.&lt;/p&gt;
+
+&lt;p&gt;Luckily for me, the hard parts have already been done for me. I’m using the amazing open source project &lt;a href=&quot;https://ondras.github.io/rot.js/hp/&quot;&gt;rot.js&lt;/a&gt; to make complicated things like pathfinding and line of sight easy.&lt;/p&gt;
+
+&lt;p&gt;I’m pleased to say it went pretty well. The animals will behave ‘turn based’, similar to traditional roguelikes - meaning they will only take an action in response to you. If there is more than one character on the screen at once, they will only behave in response to the character closest to them. I made a simple creature that comes out at night and hunts down humans, and then it flees in the daylight. For the gifs that follow I disabled night time so you can actually see him come towards me. He looks like a large naked man at the moment - don’t worry, that won’t make it into the final game.&lt;/p&gt;
+
+&lt;p&gt;Here he is running towards me:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/night-stalker.gif&quot; width=&quot;600&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Hey come here, I just want to talk&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;And here he is running away&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/fleeing.gif&quot; width=&quot;600&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Run away!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;biomes&quot;&gt;Biomes&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/biomes-1.png&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Mock ups of the biomes - each square of colour translates to a different pixel art tile&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I have 45 different biomes to generate. Each comes with its own set of challenges but in general these are what I want to try to achieve:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Objects which overflow from one panel will be shown on the next panel (no ‘half’ trees)&lt;/li&gt;
+  &lt;li&gt;Some things are ‘fully generated’ patterns such as grass clumps, magma lines&lt;/li&gt;
+  &lt;li&gt;Others are ‘rubber stamp’ style shapes such as trees, which are repeated across a panel placed seemingly at random&lt;/li&gt;
+  &lt;li&gt;Others have a set of possible stamp shapes, the full list of which can be generated by code&lt;/li&gt;
+  &lt;li&gt;Some items take the shape of randomly curved lines, linking up other shapes or points on the map&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I’m going to share with you how I’m trying to create these. This week we’ll start with the basics of terrain generation. None-technical readers beware - you might want to skip to the end of this blog post.&lt;/p&gt;
+
+&lt;h2 id=&quot;tundra&quot;&gt;Tundra&lt;/h2&gt;
+
+&lt;p&gt;Let’s start off by trying to generate a pattern that looks a bit like the ‘tundra’ biome shown above. We start with a simplex noise generator. This generates basically a 2D array of random numbers between -1 and 1. I created an array the height and width of one panel, then converted the result into tiles and displayed them. Any number &amp;gt; 0 is ‘empty’, anything &amp;lt; 0 is ‘water’&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;// generating a 2D array of noise
+export function drawNoise() {
+    const coords = [];
+
+    const noise = new Noise.Simplex();
+
+    for(var x=0; x &amp;lt; PANEL_WIDTH; x++) {
+        for(var y=0; y &amp;lt; PANEL_HEIGHT; y++) {
+            const noiseValue = noise.get(y, x);
+
+            if (!coords[x]) {
+                coords[x] = []
+            }
+
+            coords[x][y] = noiseValue;
+        }
+    }
+
+    return coords;
+}
+
+// Then for each tile in the map, we colour it in
+if (noise[rowIndex][columnIndex] &amp;gt; 0) {
+    tile.index = tileMap[&apos;EMPTY&apos;];
+} else {
+    tile.index = tileMap[&apos;WATER&apos;]; 
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Which comes out with this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/total-noise.png&quot; width=&quot;300&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Random noise&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Now the cool thing about simplex noise, as opposed to just using something like &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Math.random()&lt;/code&gt;, is that you can play around with the values you put in the get different ‘types’ of noise. Lets say instead of the above snippet, we divide the x and y coordinates of the noise by 10 - this effectively ‘zooms in’ on the noise, which is called (I think) increasing the &lt;a href=&quot;https://leatherbee.org/index.php/2018/10/24/perlin-and-simplex-noise/&quot;&gt;‘amplitude’&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;const noiseValue = noise.get(y/10, x/10);&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blobs.png&quot; width=&quot;300&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;‘blobby’ noise (not the technical term)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Take a look at the tundra biome again.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/tundra.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If you look closely, what we basically have are large blobs of black and large blobs of red, but they are faded into each other. So we just need to add a fade effect to this and we’ll have something pretty close. The way to do that is by combining multiple sets of noise with different blob sizes. We call this combining different &lt;a href=&quot;https://clockworkchilli.com/blog/6_procedural_textures_in_javascript&quot;&gt;‘octaves’&lt;/a&gt; of noise. I had fun twiddling the noise strengths for a while until I came up with this&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;const noiseOne = drawNoise(20, 35);
+const noiseTwo = drawNoise(1, 1);
+const noiseThree = drawNoise(10, 10);
+
+let finalNoise = noiseOne.map((noiseArray, x) =&amp;gt; {
+    return noiseArray.map((noiseValue, y) =&amp;gt; (noiseValue + noiseTwo[x][y]))
+})
+
+finalNoise = finalNoise.map((noiseArray, x) =&amp;gt; {
+    return noiseArray.map((noiseValue, y) =&amp;gt; (noiseValue + noiseThree[x][y]))
+})
+
+if (finalNoise[rowIndex][columnIndex] &amp;gt; 0.5) {
+    tile.index = tileMap[&apos;EMPTY&apos;];
+} else {
+    tile.index = tileMap[&apos;WATER&apos;];
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/tundra-noise.png&quot; width=&quot;300&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Three octaves of noise&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;And there we have it. By playing around with the numbers passed into the noise generator, we can come up with a surprising variety of different types of noise.&lt;/p&gt;
+
+&lt;h2 id=&quot;tiling-noise&quot;&gt;Tiling Noise&lt;/h2&gt;
+
+&lt;p&gt;The next problem with this noise is when you move to the north and generate a new panel, the new noise bears no relation to the previous noise. You could have a large empty clump on one panel that seems to end in a solid vertical line, as on the next panel it’s all a different colour.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/non-tiled-noise.gif&quot; width=&quot;300&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Changing panels feels clunky because the noise doesn’t tile&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I decided to get my noise to tile. First I went off on a bit of a tangent here taking my noise to another dimension and trying to generate 4D noise and map my 2D noise onto a &lt;a href=&quot;https://ronvalstar.nl/creating-tileable-noise-maps&quot;&gt;‘4D hypercube’&lt;/a&gt;. I can confirm for any of you wondering that this does indeed create tiling noise, but in fact that’s not what I’m looking for. If you look at this image from the 4D hypercube tutorial you’ll see why:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/hypercube.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The noise tiles in a regular and predictable fashion, but that’s not really what I’m looking for. I want truly random noise that flows into itself from one panel to the next. The correct solution for me was to actually just generate more noise - rather than a square of noise 48 wide and 25 high, we need to generate noise the height and width of the whole planet, and zoom in on the panel we’re looking at. Then when we move to the next panel, we just change the zoom location and the noise will flow from one area to the next smoothly. This was a lot easier to achieve than playing around with hypercubes and the good news is I don’t actually have to generate the full noise each time as long as I generate the noise from the correct area.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;const coords = [];
+
+const noise = makeNoise2D();
+
+const startX = position.x * PANEL_WIDTH;
+const endX = startX + PANEL_WIDTH;
+
+const startY = position.y * PANEL_HEIGHT;
+const endY = startY + PANEL_HEIGHT;
+
+for(var x=0; x &amp;lt; PANEL_WIDTH; x++) {
+    for(var y=0; y &amp;lt; PANEL_HEIGHT; y++) {
+        const noiseValue = noise((startY + y)/powerValue, (startX + x)/secondPowerValue);
+
+        if (!coords[x]) {
+            coords[x] = []
+        }
+
+        coords[x][y] = noiseValue;
+    }
+}
+
+return coords;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/tiling-2d-huge.gif&quot; width=&quot;300&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Here I can walk around and the noise flows naturally accross panels&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;bonus-content&quot;&gt;Bonus content&lt;/h2&gt;
+
+&lt;p&gt;Thanks for reading. I have made a little more progress than this but the article is rather long and technical already so I’ll stop here for this week. As a reward for those of you who scrolled all the way to the bottom of the page, here are the rest of the biomes as I originally came up with them a few months ago. Each of those square blobs will be translated into a beautiful pixel art tile over the coming weeks and months.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/biomes-2.png&quot; /&gt;
+&lt;img src=&quot;/images/biomes-3.png&quot; /&gt;
+&lt;img src=&quot;/images/biomes-4.png&quot; /&gt;
+&lt;img src=&quot;/images/biomes-5.png&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 24 Jun 2022 16:00:36 +0200</pubDate>
+        <link>http://blog.settle-gliese.com/2022/06/24/procedural-generation-of-biomes.html</link>
+        <guid isPermaLink="true">http://blog.settle-gliese.com/2022/06/24/procedural-generation-of-biomes.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Cramped Apartments and Space Stations</title>
