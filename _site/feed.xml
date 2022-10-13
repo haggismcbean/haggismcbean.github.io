@@ -6,9 +6,143 @@
 </description>
     <link>http://blog.settle-gliese.com/</link>
     <atom:link href="http://blog.settle-gliese.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 28 Aug 2022 13:07:03 +0200</pubDate>
-    <lastBuildDate>Sun, 28 Aug 2022 13:07:03 +0200</lastBuildDate>
+    <pubDate>Thu, 13 Oct 2022 17:22:24 +0200</pubDate>
+    <lastBuildDate>Thu, 13 Oct 2022 17:22:24 +0200</lastBuildDate>
     <generator>Jekyll v4.2.2</generator>
+    
+      <item>
+        <title>Tools for Roleplaying</title>
+        <description>&lt;p&gt;Hello good people of the internet. It’s been a while since I’ve written one of these, but don’t fear - plenty of hard work has been going on in the background. Now is as good a time as any to fill you in on all the exciting coding adventures I’ve been on. We’ve got a lot to get through so strap yourself in.&lt;/p&gt;
+
+&lt;h2 id=&quot;trading&quot;&gt;Trading&lt;/h2&gt;
+
+&lt;p&gt;It’s now possible to trade items with your fellow survivors. I feel like there’s still some work to do on the UI but at least the basic functionality is in place.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/a-hammer-for-trade.png&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;A Hammer marked for trade&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/trade-1.png&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Speaking to Sam Middleham about what items they have available for trade&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/trade-2.png&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Selecting what trade offer to make&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/trade-3.png&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;A trade offer of my hammer for his furniture mover has been made&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/trade-4.png&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;From Sam’s perspective, he can choose to accept or reject the trade offer.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;currency&quot;&gt;Currency&lt;/h2&gt;
+
+&lt;p&gt;Cultures can now create their own currency, which will make trading much more convenient as there is no back-and-forth if you both agree to the same price. A lot could be written about this, but you didn’t come to this blog to read, did you? Here is an enigmatic screenshot instead.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/terminal-currency-2.png&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;fire&quot;&gt;Fire&lt;/h2&gt;
+
+&lt;p&gt;There is a day/night cycle implemented now. It can be awfully inconvenient to be caught outside of camp after dark - you are likely to be eaten by alien monsters unless you are carrying a torch. The monsters flee from torchlight but you should still find shelter quickly because the torches expire before the end of nightfall.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/torch-demonstration.gif&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Here I am bravely leaving camp with the protection of a freshly lit torch&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;pots&quot;&gt;Pots&lt;/h2&gt;
+
+&lt;p&gt;The most exciting of this barrage of updates, it’s now not only possible but positively encouraged for you to decorate pots when you create them. Depending on your talents, you can choose to write a nice description or do a little pixel art, but you will be limited to the colours your culture has the ability to make paints of.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/pot-1.png&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;A greco-roman style pot&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/pot-2.png&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Or how about something a bit more modern?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/pot-3.png&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;A pot being ‘looked’ at&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;And for those of you who prefer sharing your wonderful creations on the walls of buildings, you’ll be pleased to know that this is now also possible.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/graffiti.png&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;A delightful message left for everyone to read&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/graffiti-picture.png&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;And why not add lifelike portraits to the walls as well?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;h2 id=&quot;other-bits-and-pieces&quot;&gt;Other Bits and Pieces&lt;/h2&gt;
+
+&lt;p&gt;I’ve also added the following to the game (in varying states of buggyness)&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Summary of events since last login&lt;/li&gt;
+  &lt;li&gt;Fire pits&lt;/li&gt;
+  &lt;li&gt;XP system&lt;/li&gt;
+  &lt;li&gt;Workshop upgrade system&lt;/li&gt;
+  &lt;li&gt;Hunger system (if you are hungry you move slower and your health drops to 1HP)&lt;/li&gt;
+  &lt;li&gt;Domesticated animal breeding&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;thank-you-and-goodbye&quot;&gt;Thank you and Goodbye&lt;/h2&gt;
+
+&lt;p&gt;Well that’s your blog update. A bit brief on the old words today, but plenty of pictures. If you’ve got any questions or comments I’d love to hear from you in the discord. I’ll update you soon on how the music is going (it’s going well). For the next little bit of time I’m getting the last few killer features into the game - pvp combat, farming, multi-day projects for building (and destroying) walls and gates, and some prompts to encourage you all to get creative. The plan is to get that stuff out in the next couple of weeks, and then spend most of November actually playing my own game and working on all the balance things - tech tree, combat, hunger, and all that good stuff.&lt;/p&gt;
+
+&lt;p&gt;Until next time, peace out!&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 13 Oct 2022 12:16:36 +0200</pubDate>
+        <link>http://blog.settle-gliese.com/2022/10/13/trading-fire-and-pots.html</link>
+        <guid isPermaLink="true">http://blog.settle-gliese.com/2022/10/13/trading-fire-and-pots.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Tools for Roleplaying</title>
