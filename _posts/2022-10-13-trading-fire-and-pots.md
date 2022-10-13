@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Tools for Roleplaying"
+title:  "Trading, Fire, and Pots"
 date:   2022-10-13 10:16:36
 ---
 
