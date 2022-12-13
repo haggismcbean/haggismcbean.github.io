@@ -6,9 +6,100 @@
 </description>
     <link>http://blog.settle-gliese.com/</link>
     <atom:link href="http://blog.settle-gliese.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 13 Oct 2022 17:23:17 +0200</pubDate>
-    <lastBuildDate>Thu, 13 Oct 2022 17:23:17 +0200</lastBuildDate>
+    <pubDate>Tue, 13 Dec 2022 17:52:21 +0100</pubDate>
+    <lastBuildDate>Tue, 13 Dec 2022 17:52:21 +0100</lastBuildDate>
     <generator>Jekyll v4.2.2</generator>
+    
+      <item>
+        <title>Christmas Update</title>
+        <description>&lt;p&gt;Yo ho ho to all the good people of the internet. I’m sure you’ve all been asking yourselves what the latest progress is with Settle Gliese so here I am to provide you with an update.&lt;/p&gt;
+
+&lt;h2 id=&quot;descriptions&quot;&gt;Descriptions&lt;/h2&gt;
+
+&lt;p&gt;I had a great time twiddling around with some openAI text generation and have generated a huge amount of descriptions for all the plants and animals in the game. I have ambitions to extend these to man-made items as well - anything that you can add a description to can have an auto-generated description if you are lacking the inspiration or imagination to come up with your own.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/camel.png&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;A friendly camel&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/night-stalker.png&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;A typically voluptuous beast&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;culture-specific-items&quot;&gt;Culture specific items&lt;/h2&gt;
+
+&lt;p&gt;All kinds of things now look differently depending on which of the eight cultures you are a part of. If you want the cool pot of the desert people but you are but a lowly swamp person, you’ll have no choice but to trade for it or steal it.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/polar-community.png&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;A polar community&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;tents&quot;&gt;Tents&lt;/h2&gt;
+
+&lt;p&gt;For any people that want to be nomads, there are a number of interesting tents and temporary structures they can utilise. Animals will not enter a tent so you can camp out in one safely as night falls. They can be taken down and carried on the back of a person or beast of burden.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/tent.png&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;A traditional goati tent&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;tech-tree&quot;&gt;Tech Tree&lt;/h2&gt;
+
+&lt;p&gt;I’ve ‘finalised’ the tech tree for now and added recipes and workshops for every item in the game. There’s a bunch of cool things in there such as special pots which can imbue your food with powers, brainchip enhancements, wagonways, sailing boats, guard houses, vending machines, and more.&lt;/p&gt;
+
+&lt;h2 id=&quot;performance&quot;&gt;Performance&lt;/h2&gt;
+
+&lt;p&gt;I’ve improved the performance of the game by reducing the amount of data that needs to be saved and sent when you’re walking around the world. There’s still plenty of work to be done but I managed to reduce the database size by a factor of ten in the last couple of months.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/riverside.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;An unoptimised river&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[
+    { tileType: &apos;NONE&apos; }, { tileType: &apos;NONE&apos; }, { tileType: &apos;NONE&apos; }, { tileType: &apos;RIVER&apos; }, { tileType: &apos;NONE&apos; }, { tileType: &apos;NONE&apos; }, { tileType: &apos;NONE&apos; },
+    { tileType: &apos;NONE&apos; }, { tileType: &apos;NONE&apos; }, { tileType: &apos;NONE&apos; }, { tileType: &apos;RIVER&apos; }, { tileType: &apos;NONE&apos; }, { tileType: &apos;NONE&apos; }, { tileType: &apos;NONE&apos; },
+    { tileType: &apos;NONE&apos; }, { tileType: &apos;NONE&apos; }, { tileType: &apos;NONE&apos; }, { tileType: &apos;RIVER&apos; }, { tileType: &apos;NONE&apos; }, { tileType: &apos;NONE&apos; }, { tileType: &apos;NONE&apos; },
+    { tileType: &apos;NONE&apos; }, { tileType: &apos;NONE&apos; }, { tileType: &apos;NONE&apos; }, { tileType: &apos;RIVER&apos; }, { tileType: &apos;RIVER&apos; }, { tileType: &apos;RIVER&apos; }, { tileType: &apos;NONE&apos; },
+    { tileType: &apos;NONE&apos; }, { tileType: &apos;NONE&apos; }, { tileType: &apos;NONE&apos; }, { tileType: &apos;NONE&apos; }, { tileType: &apos;NONE&apos; }, { tileType: &apos;RIVER&apos; }, { tileType: &apos;NONE&apos; },
+    { tileType: &apos;NONE&apos; }, { tileType: &apos;NONE&apos; }, { tileType: &apos;NONE&apos; }, { tileType: &apos;NONE&apos; }, { tileType: &apos;NONE&apos; }, { tileType: &apos;RIVER&apos; }, { tileType: &apos;NONE&apos; },
+]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Converts nicely into an array of ones and zeros&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[
+    0, 0, 0, 1, 0, 0, 0,
+    0, 0, 0, 1, 0, 0, 0,
+    0, 0, 0, 1, 0, 0, 0,
+    0, 0, 0, 1, 1, 1, 0,
+    0, 0, 0, 0, 0, 1, 0,
+    0, 0, 0, 0, 0, 1, 0,
+]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Which can be converted to a binary number &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;000100000010000001000000111000000100000010&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Which can be converted to a hex number &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;4081038102&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Which takes up a lot less space.&lt;/p&gt;
+
+&lt;h2 id=&quot;whats-next&quot;&gt;What’s Next?&lt;/h2&gt;
+
+&lt;p&gt;The trailer will be out soon. Most of the major features in the game have been implemented (to a more- or less-buggy state), now the job is to go back and fix most of the bugs, and add minor features such as individual item behaviours. I’m really enjoying the ride so far and it’s really exciting being able to see the rough outline of what the game is going to be! Hopefully we’ll be ready for some early beta testers early next year some time&lt;/p&gt;
+</description>
+        <pubDate>Tue, 13 Dec 2022 13:42:16 +0100</pubDate>
+        <link>http://blog.settle-gliese.com/2022/12/13/christmas-update.html</link>
+        <guid isPermaLink="true">http://blog.settle-gliese.com/2022/12/13/christmas-update.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Trading, Fire, and Pots</title>
@@ -918,99 +1009,6 @@ return coords;
         <pubDate>Sun, 05 Jun 2022 14:56:46 +0200</pubDate>
         <link>http://blog.settle-gliese.com/2022/06/05/how-to-generate-a-world.html</link>
         <guid isPermaLink="true">http://blog.settle-gliese.com/2022/06/05/how-to-generate-a-world.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>A World in a Petri Dish</title>
-        <description>&lt;h2 id=&quot;hello-world&quot;&gt;Hello World&lt;/h2&gt;
-
-&lt;p&gt;Welcome to the Settle Gliese developer blog! I’ll be sharing my thoughts about Settle Gliese and let you know how development is going. I thought I’d start with some beard stroking.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/my-beard.jpeg&quot; height=&quot;400&quot; /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;The author’s beard&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;This week I’ll be writing about how the game Settle Gliese will finally put to rest an age old philosophical question - how did we go from a hunter gatherer lifestyle to the more technologically advanced ones you see today?&lt;/p&gt;
-
-&lt;h2 id=&quot;the-mute-ages&quot;&gt;The Mute Ages&lt;/h2&gt;
-
-&lt;p&gt;Modern humans have existed for somewhere between 200,000 and 300,000 years. Strangely, some people think we only actually learned to speak 50,000 years ago, so for that first 150,000 years or so we were just standing around looking at each other, and thinking to ourselves how useful it would be to communicate.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/confused.webp&quot; height=&quot;400&quot; /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;What it would be like if we couldn’t speak&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;technology-victory&quot;&gt;Technology Victory&lt;/h2&gt;
-
-&lt;p&gt;Once we did get language figured out, it was still not an easy road to the wonders of the modern age. Shockingly, things did not really get started until we learned the basics of agriculture just 12,000 years ago.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Agriculture was the key&lt;/strong&gt; that unlocked the human technology tree, because before we stayed in one place farming year round, we weren’t such a sitting target for maraudering rapists, so we didn’t need to bother inventing walls, swords, and shields - we could just run away. And we didn’t need things like massive clay pots or buildings for storage, because we just ate food as we got it instead.&lt;/p&gt;
-
-&lt;p&gt;So how could it possibly take the (allegedly) smartest animal on earth 38,000 years just to figure out how to plant a seed in the ground and start up a nascent civilisation? How? Tell me, goddamnit!&lt;/p&gt;
-
-&lt;h2 id=&quot;the-first-king---nasty-brutish-and-short&quot;&gt;The First King - Nasty, Brutish, and Short&lt;/h2&gt;
-
-&lt;p&gt;Well, like all unanswerable questions, this one has been answered by philosophers - a clever group of people that worked out they could just make stuff up and if nobody could prove them wrong, they could fool a university into hiring them.&lt;/p&gt;
-
-&lt;p&gt;The first of these great philosophers to answer this particular riddle (or at least the first I’ll be mentioning in this blog post) was none other than Thomas Hobbes. Born in 1588 in England, Thomas Hobbes was a teacher, so he had lots of practise making up the answers to things in order to seem clever.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/hobbes.jpeg&quot; height=&quot;400&quot; /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Thomas Hobbes was also nasty brutish and short&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;In 1651 he published his book ‘Leviathan’, in which he argues that for that period of time before men formed themselves into civilisations, they spent all time team killing each other, stealing sex, and eating mud. It was a brutal time according to Hobbes, who famously described it as ‘solitary, poor, nasty, brutish, and short’.&lt;/p&gt;
-
-&lt;p&gt;But then one day, somewhere out in the killing fields, came a great figure, chosen by God to forge order out of the chaos. He marched around with a big stick and forced everyone to stop killing each other and jolly well behave themselves. He made some of them farm, others mine for minerals, and others made useful tools in exchange for food and minerals. And things just sort of snowballed from there. And that man’s name? Well, actually we don’t know his name, because he made everyone else call him ‘Your Majesty’ - he was the first king.&lt;/p&gt;
-
-&lt;p&gt;That’s Hobbes’s great explanation for how the first societies formed, and if he’s right, then we have a lot to thank that first king for. Sure, the simple days of sexing, killing, and eating weren’t all bad, but they were a darn sight worse than what we have now. And if we were dropped on an alien planet with no knoweldge of our previous lives on earth, according to Hobbes, we would return to that primitive state.&lt;/p&gt;
-
-&lt;h2 id=&quot;the-garden-of-eden&quot;&gt;The Garden of Eden&lt;/h2&gt;
-
-&lt;p&gt;But was it really all that bad? Or was Thomas Hobbes, the esteemed philosopher, just talking out of his bum hole all along? That’s what Jean-Jacques argued. Who? Why, Jean-Jacques Rousseau, of course!&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/rousseau.jpeg&quot; height=&quot;400&quot; /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Rousseau 1712-1778. Significantly less brutish than Hobbes&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Like all good Frenchmen, Rousseau &lt;em&gt;hated&lt;/em&gt; kings. So when he read about Thomas Hobbes’s story of the origin of civilisation, he just couldn’t be having that. Rousseau argued instead that life before civilisation was way &lt;em&gt;better&lt;/em&gt; than what came after it - after all, why else would we spend so long doing nothing but not-inventing-civilisation? The time before civilisation was a utopia. Men and women loved one another freely, young children skipped around gailey through fields of untended grass, we ate ripe fruit from trees, and all in all there was very little killing. Perhaps some of the only people to be killed at this time were the ones who had the gall to attempt to force us into civilisation. Rousseau wrote -&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;The first man who, having fenced in a piece of land, said ‘This is mine’, and found people naïve enough to believe him, that man was the true founder of civil society. From how many crimes, wars, and murders, from how many horrors and misfortunes might not any one have saved mankind, by pulling up the stakes, or filling up the ditch, and crying to his fellows: Beware of listening to this impostor; you are undone if you once forget that the fruits of the earth belong to us all, and the earth itself to nobody.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;necessity-is-the-mother-of-all-invention&quot;&gt;Necessity is the Mother of All Invention&lt;/h2&gt;
-
-&lt;p&gt;So who was right? Hobbes? Rousseau? Or is there another explanation? Perhaps agriculture was invented out of necessity, because there were simply too many of us to be able to sustain ourselves from hunting and gathering alone? One theory is that we liked to gather in huge numbers by large rocks stacked on end. We did this for religious reasons, and also to party, and these sites became so popular it was necessary to invent farming and other grown-up things like taxes to allow people to live there year round looking after the things. Well, that could be the case, but it seems like there are still a lot of smart people arguing about which theory is right to this day, and as more archaeological evidence comes out, the popular explanation keeps changing.&lt;/p&gt;
-
-&lt;h2 id=&quot;a-world-in-a-petri-dish&quot;&gt;A World in a Petri Dish&lt;/h2&gt;
-
-&lt;p&gt;In episode 154 of the Simpsons, Lisa places a tooth in a petri dish covered in cola for a school project. A spark of electricity hits the tooth, and by some mysterious querk or magic, life is formed.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/lisa.webp&quot; height=&quot;400&quot; /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;The spark of life&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Lisa watches through a microscope as mould forms, then is astonished as the mould turns into little tiny humans, first they are hunters, next they form agricultural communities, and before long they have a little world as rich and as complex as earth. If only Lisa watched a little closer, we’d have the answer to our question, of how and why civilisation was formed.&lt;/p&gt;
-
-&lt;h2 id=&quot;finally-an-answer---and-its-a-game&quot;&gt;Finally, an answer - and it’s a game!&lt;/h2&gt;
-
-&lt;p&gt;Well, my friends, that brings us to Settle Gliese. Settle Gliese is a game about what would happen if you dropped a bunch of strangers in the middle of an untamed world, and watched how they get along. We’ll be able to see in real time, which ones are killing each other and eating mud, which ones are getting along famously, and which ones are running out of food and forced to settle down and start tending plants. It’s my hope that in time civilisation will spawn, and art, culture, trade, and emergent complexity is formed from the wilderness of the planet Gliese. The great debate will be settled once and for all. Or, well, in actual fact you probably shouldn’t really use this game to settle any debates. But at least it’ll be interesting to watch, and each of us can take part in a grand experiment to see how society was formed.&lt;/p&gt;
-</description>
-        <pubDate>Sat, 28 May 2022 18:24:55 +0200</pubDate>
-        <link>http://blog.settle-gliese.com/2022/05/28/a-world-in-a-petris-dish.html</link>
-        <guid isPermaLink="true">http://blog.settle-gliese.com/2022/05/28/a-world-in-a-petris-dish.html</guid>
         
         
       </item>

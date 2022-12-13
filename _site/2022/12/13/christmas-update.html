@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Christmas Update</title>
+  <meta name="description" content="Yo ho ho to all the good people of the internet. I’m sure you’ve all been asking yourselves what the latest progress is with Settle Gliese so here I am to pr...">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://blog.settle-gliese.com/2022/12/13/christmas-update.html">
+  <link rel="alternate" type="application/rss+xml" title="Settle Gliese Developer Blog" href="http://blog.settle-gliese.com/feed.xml" />
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Settle Gliese Developer Blog</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+        
+          
+        
+          
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Christmas Update</h1>
+    <p class="post-meta">Dec 13, 2022</p>
+  </header>
+
+  <article class="post-content">
+    <p>Yo ho ho to all the good people of the internet. I’m sure you’ve all been asking yourselves what the latest progress is with Settle Gliese so here I am to provide you with an update.</p>
+
+<h2 id="descriptions">Descriptions</h2>
+
+<p>I had a great time twiddling around with some openAI text generation and have generated a huge amount of descriptions for all the plants and animals in the game. I have ambitions to extend these to man-made items as well - anything that you can add a description to can have an auto-generated description if you are lacking the inspiration or imagination to come up with your own.</p>
+
+<p><img src="/images/camel.png" /></p>
+
+<blockquote>
+  <p>A friendly camel</p>
+</blockquote>
+
+<p><img src="/images/night-stalker.png" /></p>
+
+<blockquote>
+  <p>A typically voluptuous beast</p>
+</blockquote>
+
+<h2 id="culture-specific-items">Culture specific items</h2>
+
+<p>All kinds of things now look differently depending on which of the eight cultures you are a part of. If you want the cool pot of the desert people but you are but a lowly swamp person, you’ll have no choice but to trade for it or steal it.</p>
+
+<p><img src="/images/polar-community.png" /></p>
+
+<blockquote>
+  <p>A polar community</p>
+</blockquote>
+
+<h2 id="tents">Tents</h2>
+
+<p>For any people that want to be nomads, there are a number of interesting tents and temporary structures they can utilise. Animals will not enter a tent so you can camp out in one safely as night falls. They can be taken down and carried on the back of a person or beast of burden.</p>
+
+<p><img src="/images/tent.png" /></p>
+
+<blockquote>
+  <p>A traditional goati tent</p>
+</blockquote>
+
+<h2 id="tech-tree">Tech Tree</h2>
+
+<p>I’ve ‘finalised’ the tech tree for now and added recipes and workshops for every item in the game. There’s a bunch of cool things in there such as special pots which can imbue your food with powers, brainchip enhancements, wagonways, sailing boats, guard houses, vending machines, and more.</p>
+
+<h2 id="performance">Performance</h2>
+
+<p>I’ve improved the performance of the game by reducing the amount of data that needs to be saved and sent when you’re walking around the world. There’s still plenty of work to be done but I managed to reduce the database size by a factor of ten in the last couple of months.</p>
+
+<p><img src="/images/riverside.png" /></p>
+
+<p>An unoptimised river</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[
+    { tileType: 'NONE' }, { tileType: 'NONE' }, { tileType: 'NONE' }, { tileType: 'RIVER' }, { tileType: 'NONE' }, { tileType: 'NONE' }, { tileType: 'NONE' },
+    { tileType: 'NONE' }, { tileType: 'NONE' }, { tileType: 'NONE' }, { tileType: 'RIVER' }, { tileType: 'NONE' }, { tileType: 'NONE' }, { tileType: 'NONE' },
+    { tileType: 'NONE' }, { tileType: 'NONE' }, { tileType: 'NONE' }, { tileType: 'RIVER' }, { tileType: 'NONE' }, { tileType: 'NONE' }, { tileType: 'NONE' },
+    { tileType: 'NONE' }, { tileType: 'NONE' }, { tileType: 'NONE' }, { tileType: 'RIVER' }, { tileType: 'RIVER' }, { tileType: 'RIVER' }, { tileType: 'NONE' },
+    { tileType: 'NONE' }, { tileType: 'NONE' }, { tileType: 'NONE' }, { tileType: 'NONE' }, { tileType: 'NONE' }, { tileType: 'RIVER' }, { tileType: 'NONE' },
+    { tileType: 'NONE' }, { tileType: 'NONE' }, { tileType: 'NONE' }, { tileType: 'NONE' }, { tileType: 'NONE' }, { tileType: 'RIVER' }, { tileType: 'NONE' },
+]
+</code></pre></div></div>
+
+<p>Converts nicely into an array of ones and zeros</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[
+    0, 0, 0, 1, 0, 0, 0,
+    0, 0, 0, 1, 0, 0, 0,
+    0, 0, 0, 1, 0, 0, 0,
+    0, 0, 0, 1, 1, 1, 0,
+    0, 0, 0, 0, 0, 1, 0,
+    0, 0, 0, 0, 0, 1, 0,
+]
+</code></pre></div></div>
+
+<p>Which can be converted to a binary number <code class="language-plaintext highlighter-rouge">000100000010000001000000111000000100000010</code></p>
+
+<p>Which can be converted to a hex number <code class="language-plaintext highlighter-rouge">4081038102</code></p>
+
+<p>Which takes up a lot less space.</p>
+
+<h2 id="whats-next">What’s Next?</h2>
+
+<p>The trailer will be out soon. Most of the major features in the game have been implemented (to a more- or less-buggy state), now the job is to go back and fix most of the bugs, and add minor features such as individual item behaviours. I’m really enjoying the ride so far and it’s really exciting being able to see the rough outline of what the game is going to be! Hopefully we’ll be ready for some early beta testers early next year some time</p>
+
+  </article>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Settle Gliese Developer Blog</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <li>Settle Gliese Developer Blog</li>
+          <li><a href="mailto:"></a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-3">
+        <p class="text">The developer blog for Settle Gliese
+</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>
