@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>The Big Flat Now</title>
+  <meta name="description" content="Amaze was pretty inspiring.">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://blog.settle-gliese.com/2023/05/15/the-big-flat-now.html">
+  <link rel="alternate" type="application/rss+xml" title="Settle Gliese Developer Blog" href="http://blog.settle-gliese.com/feed.xml" />
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Settle Gliese Developer Blog</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+        
+          
+        
+          
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">The Big Flat Now</h1>
+    <p class="post-meta">May 15, 2023</p>
+  </header>
+
+  <article class="post-content">
+    <p><a href="https://2023.amaze-berlin.de/">Amaze</a> was pretty inspiring.</p>
+
+<p>I was introduced to the concept of the ‘<a href="https://032c.com/magazine/the-big-flat-now-power-flatness-and-nowness-in-the-third-millennium">Big Flat Now</a>’. Websites are ‘big’ in that they contain endless information, ‘flat’ in that all that information is the same heirarchy, and ‘now’ in that everything is available on demand and constantly updating.</p>
+
+<p>Your friend’s birthday, the war in ukraine, and nikki minaj’s new album are given equal importance on your twitter feed. Each is exactly one post on your timeline and none is given special attention or privilege by the website layout. When it’s out of your feed, it’s lost forever. New stuff is constantly replacing it.</p>
+
+<p>At the moment SG feels very static if nobody is online when you are. There is no real incentive to log back in and check what you have missed. The game is only really fun if you happen to know someone else will be online when you are. If I implement the Big Flat Now in SG, it will feel more alive and interesting.</p>
+
+<p>Here is how I’m going to do that.</p>
+
+<h2 id="async-conversations">Async Conversations</h2>
+
+<p>I’m going to rework the conversation trees to make them feel more like you are talking to someone who is currently online.</p>
+
+<p>When you walk near someone who is offline, they will say their first conversation tree item to you. I’ll use a clever AI trick to let you respond in freeform text and detect which response that is. The other character will respond to the option you selected. To you, it will feel like a real conversation with an online player. Eventually you’ll move seamlessly from conversation trees into real chatter. When they next log in, they’ll see this conversation and when they approach you, come up with a nice response to the last thing you said. If you build a tree for them, they will experience it in this same conversational form. You’ll be able to strike up conversations like this and have satisfying interactions</p>
+
+<h2 id="events">Events</h2>
+
+<p>I’m going to rework the events section to make it feel more like a ‘brainchip feed’.</p>
+
+<p>It will show over the map rather than next to it or on a different page. Item, plant, and animal descriptions will show up in your feed as you walk past things, so you don’t have to manually ‘l’ook at them to see them. There will be random ‘interstitials’ that describe the weather, environment, or situation you’re in. There will be ‘prompts’ which ask you to describe how your character is feeling, what they think of other characters or items they are near, what they’re going through.</p>
+
+<p>Sometimes, you will see other character’s responses to prompts - for example if you walk past a statue and some other character responded to it, there’s a chance you will overhear them muttering to themselves about it.</p>
+
+<p>There will be ‘story prompts’ that let you build a collaborative story with other characters over time.</p>
+
+<h2 id="quests">Quests</h2>
+
+<p>There will be ‘quests’ which give your character a goal. You will be assigned characters who are your enemy or your friend. You will get quests to form into groups. Those groups will form larger alliances. There will be conflict between groups and within groups. In-game, these ‘quests’ will come from the viewers of SG back on earth. There will be serious consequences for failing quests, or not attempting them, or sharing details of the quests with other characters.</p>
+
+<p>Quests will help the town build up. You’ll get a quest to build a house, give it a second floor, furnish a bedroom. There will be quests to open businesses and expand them to numerous locations, expand the number of items on sale and so on.</p>
+
+<p>Some of these quests will be created by characters for other characters, and some of them will be created by the game and randomly assigned.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Once all of these changes are done, I’m hoping it will change SG from feeling like a rather static and plain MMO roguelike into something more akin to my vision of a collaborative storytelling game. Towns will feel alive and full of chatter, and out in the wilds you’ll be confronted with the beauty and strangeness of the planet as you travel. Hopefully it will give more players the impetus needed to keep playing and build up a rich and complex world together. If you have any opinions or input on these ideas please come and share them in the discord.</p>
+
+  </article>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Settle Gliese Developer Blog</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <li>Settle Gliese Developer Blog</li>
+          <li><a href="mailto:"></a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-3">
+        <p class="text">The developer blog for Settle Gliese
+</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>
